@@ -21,7 +21,7 @@ public class LoginPage extends JPanel {
         setLayout(new BorderLayout());
         setBackground(new Color(230, 235, 230));
 
-        // --- 1. HEADER (FIXED & CORRECTED) ---
+        // --- HEADER---- 
         JPanel headerPanel = new JPanel(new BorderLayout());
         headerPanel.setBackground(DARK_GREEN);
         headerPanel.setPreferredSize(new Dimension(800, 100));
@@ -45,7 +45,7 @@ public class LoginPage extends JPanel {
         
         add(headerPanel, BorderLayout.NORTH);
 
-        // --- 2. CENTER LOGIN CARD 
+        // ---  CENTER LOGIN CARD 
         JPanel centerPanel = new JPanel(new GridBagLayout());
         centerPanel.setOpaque(false);
         
@@ -120,7 +120,7 @@ public class LoginPage extends JPanel {
             card.repaint();
         });
 
-        // --- LOGIN ACTION LOGIC ---
+        // --- LOGIN ACTION ---
         loginBtn.addActionListener(e -> {
             String role = (String) loginRole.getSelectedItem();
             String nameInput = nameField.getText();
