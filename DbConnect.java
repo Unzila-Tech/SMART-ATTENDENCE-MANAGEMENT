@@ -192,7 +192,7 @@ public class DbConnect {
 
     public static void markAttendance(String student, String subject, String course) {
 
-        subject = subject.trim().toUpperCase(); // ✅ IMPORTANT FIX
+        subject = subject.trim().toUpperCase(); 
 
         String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
                 .format(new java.util.Date());
